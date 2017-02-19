@@ -1,4 +1,4 @@
-package se.seb.iam.smsopt.services;
+package se.seb.jaxrs.services;
 
 import java.net.URI;
 import java.util.List;
@@ -16,8 +16,8 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 
-import se.seb.iam.smsopt.model.PersonDto;
-import se.seb.iam.smsopt.model.PhoneNumber;
+import se.seb.jaxrs.model.PersonDto;
+import se.seb.jaxrs.model.PhoneNumber;
 
 @javax.ws.rs.Path("/phoneNr")
 public class PhoneNrResource {

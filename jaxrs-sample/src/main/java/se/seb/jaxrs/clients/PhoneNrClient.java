@@ -1,4 +1,4 @@
-package se.seb.iam.smsopt.clients;
+package se.seb.jaxrs.clients;
 
 import java.net.URI;
 
@@ -10,8 +10,8 @@ import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import se.seb.iam.smsopt.model.PersonDto;
-import se.seb.iam.smsopt.model.PhoneNumber;
+import se.seb.jaxrs.model.PersonDto;
+import se.seb.jaxrs.model.PhoneNumber;
 
 public class PhoneNrClient {
 	
@@ -25,7 +25,7 @@ public class PhoneNrClient {
 		Client client = ClientBuilder.newClient();
 		PhoneNumber phoneNr = null;
 		try{		
-			String url = "http://localhost:9080/sms-otp/rest/phoneNr/" + personNr;
+			String url = "http://localhost:9080/jaxrs-sample/rest/phoneNr/" + personNr;
 		
 			phoneNr =  client.target(url)
 							 .request(MediaType.APPLICATION_JSON)
@@ -62,7 +62,7 @@ public class PhoneNrClient {
 			personDto.setPhoneNr(phoneNr);
 			
 			// Call Back-end service			
-			String url = "http://localhost:9080/sms-otp/rest/phoneNr/";
+			String url = "http://localhost:9080/jaxrs-sample/rest/phoneNr/";
 			Response response = client.target(url).request().post(Entity.json(personDto));
 					
 			System.out.println(response.toString());

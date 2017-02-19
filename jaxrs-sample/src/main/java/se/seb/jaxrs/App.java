@@ -1,12 +1,12 @@
-package se.seb.iam.smsopt;
+package se.seb.jaxrs;
 
 import java.util.HashSet;
 import java.util.Set;
 
 import javax.ws.rs.ApplicationPath;
 
-import se.seb.iam.smsopt.services.PhoneNrResource;
-import se.seb.iam.smsopt.services.RootResource;
+import se.seb.jaxrs.services.PhoneNrResource;
+import se.seb.jaxrs.services.RootResource;
 
 
 /**

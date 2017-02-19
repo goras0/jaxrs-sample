@@ -1,9 +1,9 @@
-package se.seb.iam.smsopt.services;
+package se.seb.jaxrs.services;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 
-import se.seb.iam.smsopt.clients.PhoneNrClient;
+import se.seb.jaxrs.clients.PhoneNrClient;
 
 @Path("/")
 public class RootResource {

@@ -1,4 +1,4 @@
-package se.seb.iam.smsopt.model;
+package se.seb.jaxrs.model;
 
 public class PersonNumber {
 	String pnr;
